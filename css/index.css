@@ -1,0 +1,204 @@
+body {
+	background: url(../imgs/bg1366768.png);
+	width:1366px;
+	height:768px;
+	padding:0;
+	margin:0;
+}
+
+img { border:none;}
+
+#main_wrap {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+#logo {
+	width: 324px;
+	height: 60px;
+	position: absolute;
+	top: 60px;
+	left: 120px;
+	text-align: center;
+	line-height: 42px;
+}
+
+#return {
+	width: 133px;
+	height: 70px;
+	position: absolute;
+	top: 40px;
+	right: 46px;
+	text-align: center;
+	display:none;
+}
+
+#return a{ width:133px; height:70px; display:block; background:url(../imgs/back.png) no-repeat; }
+
+#return span {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
+#left_menu_wrap {
+	bottom: 0;
+	height: 752px;
+	left: 0;
+	position: absolute;
+	transform-origin: 0 100%;
+	width: 830px;
+	transform: rotate(-0deg) scale(0.8);
+}
+ 
+#left_menu {
+	height: 552px;
+	width: 830px;
+	left: 0px;
+	bottom: 70px;
+	position: absolute;
+	transform: rotate(-0deg) scale(1.2);
+}
+
+#left_menu>div {
+	position: absolute;
+	padding: 0px;
+	marigin: 0px;
+}
+
+.menu_tile {
+	transition: all 0.5s ease-in;
+}
+
+.src_position {
+	transform: rotate(45deg);
+}
+
+/** 初始位置 **/
+#menu0.src_position {
+	left: -200px;
+	top: -100px;
+}
+
+/** 停留位置 **/
+#menu0.des_position {
+	left: 48px;
+	top: 0px;
+	
+}
+
+.left_menu1 { position:absolute; top:110px; left:470px; font-size:24px; font-family:"微软雅黑";}
+.left_menu2 { position:absolute; top:190px; left:550px; font-size:40px; font-family:"微软雅黑";}
+.left_menu3 { position:absolute; top:320px; left:470px; font-size:24px; font-family:"微软雅黑";}
+
+a { text-decoration:none; color:white;}
+
+#right_menu_wrap { position:absolute; width:600px; height:700px; top:80px; right:20px; overflow:hidden;}
+
+.right_menu_title {position:absolute; width:528px; height:67px; background:url(../imgs/right_menu_title.png) no-repeat; top:0; left:0;}
+.right_menu_title p { padding:0; margin:0; position:absolute; top:5px; left:40px; font-family:"微软雅黑"; font-size:40px; color:white;}
+
+.right_menu1_wrap { position:absolute; height:600px; width:600px; display:none; top:100px; right:600px;}
+#right_menu_wrap ul { width:540px; height:550px; margin:0; padding:0;}
+
+.right_menu2_wrap { position:absolute; height:600px; width:600px;display:none; top:100px; right:600px;}
+
+.right_menu3_wrap {  position:absolute;height:600px; width:600px;display:none; top:100px; right:600px;}
+
+.right_menu4_wrap {  position:absolute;height:600px; width:600px;display:none; top:100px; right:0;}
+#right_submenu_wrap {position:absolute; width:600px; height:600px; top:100px; right:0; overflow:hidden; display:none;}
+#right_submenu_wrap ul{width:540px; height:550px; margin-top:100px; padding:0;}
+#right_submenu_wrap ul li, .right_menu2_wrap ul li, .right_menu3_wrap ul li, .right_menu4_wrap ul li{
+	padding: 0;
+	margin: 0 8px 8px 0;
+	width:260px;
+	height:130px;
+	float:left;
+	list-style: none;
+}
+
+.right_menu4_wrap .menu1{
+	width:510px;
+	height:150px;
+	float:left;
+	list-style:none;
+	margin-top:5px;
+	transition:1s;
+}
+
+.right_menu4_wrap .menu2{
+	width:250px;
+	height:150px;
+	float:left;
+	list-style:none;
+	margin-right:10px; 
+	margin-top:5px;
+	transition:1s;
+}
+
+.right_menu4_wrap .menu1:hover, .right_menu4_wrap .menu2:hover{
+	opacity:0.3;
+	transform:scale(0.9);
+}
+
+#myTemplateWrapper { width:400px; height:650px; position:relative; top:30px; right:0; float:right;}
+
+/************************************************************************************************
+*定义文本行列
+*/
+.form_key1 {
+	position:absolute;
+	width: 330px; 
+	height: 60px; 
+	line-height: 60px;
+	font-size: 30px;
+	/*设置文字自动换行
+	word-wrap: break-word;
+	word-break: break-all;
+	white-space: normal;
+	*/
+	top:100px;
+	left:60px;
+}
+
+.form_value1 {
+	position:absolute;
+	width: 350px;
+	height: 60px;
+	top:170px;
+	left:90px; 
+}
+
+/************************************************************************************************
+*文本框
+*/
+
+.form_value1 input {
+	font-size: 30px;
+	height: 40px;
+	width: 200px;
+	color: #000;
+	border: 1px solid #00a0e9;
+	vertical-align: top;
+}
+
+/********
+*按钮
+*/
+.form_value1 a {
+	width:110px;
+	height:60px;
+	background:url(../imgs/ok.png);
+	display:inline-block;
+	margin-left: 30px;
+}
+
+.form_value1 a:active {
+	background:url(../imgs/ok_click.png);
+}

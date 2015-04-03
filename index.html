@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>填单机首页</title>
+</head>
+<!-- 公用js 必须引用-->
+<script src="./js/jsloader.js"></script>
+
+<script src="./js/index.js"></script>
+<body>
+<div id="main_wrap">
+    <!-- logo -->
+    <div id="logo"></div>
+
+    <div id="return">
+        <a href="javascript:;"></a>
+    </div>
+
+    <!-- 左边菜单区域 -->
+    <div id="left_menu_wrap">
+        <div id="left_menu">
+            <div id="menu0" class="menu_tile des_position"
+                 style="height: 448px; width: 448px;"></div>
+            <p id="leftmenu1" class="left_menu1"><a href="javascript:;">预约取号</a></p>
+            <p id="leftmenu2" class="left_menu2"><a href="javascript:;">个人业务</a></p>
+            <p id="leftmenu3" class="left_menu3"><a href="javascript:;">对公业务</a></p>
+        </div>
+    </div>
+
+    <!-- 右边菜单区域 -->
+    <div id="right_menu_wrap">
+
+        <div class="right_menu_title"><p></p></div>
+
+        <!-- 预约取号 -->
+        <div class="right_menu1_wrap">
+            <div class="form_key1">请输入您的预约验证码</div>
+            <div class="form_value1">
+                <input id="verif_code" type="number"/>
+                <a id="fetchNoBtn" href="javascript:;"></a>
+            </div>
+        </div>
+
+        <!-- 对私业务2级 -->
+        <div class="right_menu2_wrap"></div>
+        <!-- 对公业务2级 -->
+        <div class="right_menu3_wrap"></div>
+        <!-- 平板独立的菜单 -->
+        <div class="right_menu4_wrap"></div>
+        <!-- 3级菜单 -->
+        <div id="right_submenu_wrap"></div>
+
+    </div>
+
+</div>
+</body>
+</html>
