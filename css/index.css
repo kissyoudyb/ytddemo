@@ -1,5 +1,5 @@
 body {
-	background: url(../imgs/bg1366768.png);
+	background: url(../imgs/bg1366768.png) no-repeat;
 	width:1366px;
 	height:768px;
 	padding:0;

@@ -1,5 +1,6 @@
 ﻿//密钥全局变量12345678
-var isInitSecretKey = isInitSecretKey || false;
+//var isInitSecretKey = isInitSecretKey || false;
+var isInitSecretKey = true;
 
 function NewMainPage() {
 	this.leftMenu1 = $('#leftmenu1');
@@ -88,7 +89,7 @@ NewMainPage.prototype.init = function() {
 };
 
 NewMainPage.prototype.initBodyStyle = function() {
-	$('body').css('background', 'url(./imgs/bg1366768.png)').width('1366').height('768').css('padding', '0').css('margin', '0');
+	$('body').css('background', 'url(./imgs/bg1366768.png) no-repeat').width('1366').height('768').css('padding', '0').css('margin', '0');
 };
 
 // 动态生成2级菜单
@@ -114,7 +115,8 @@ NewMainPage.prototype.dynamic2LevelMenu = function(sampleData) {
 		// 动态生成对私业务菜单
 		var ul = $('<ul></ul>');
 		for ( var i = 0; i < pMenu.length; i++) {
-			var li = $("<li id='" + pMenu[i].id + "' title='" + pMenu[i].label + "'><a href='javascript:;'><img src='publicProcess/imgs/" + pMenu[i].img + "' width='260' height='130'/></a></li>");
+			//var li = $("<li id='" + pMenu[i].id + "' title='" + pMenu[i].label + "'><a href='javascript:;'><img src='publicProcess/imgs/" + pMenu[i].img + "' width='260' height='130'/></a></li>");
+            var li = $("<li id='" + pMenu[i].id + "' title='" + pMenu[i].label + "'><a href='javascript:;'>" + pMenu[i].label + "</a></li>");
 			ul.append(li);
 
 			// 添加点击
@@ -341,7 +343,8 @@ NewMainPage.prototype.dynamic3LevelPMenu = function(subMenu) {
 	$('#right_submenu_wrap').html('');
 	var ul = $('<ul></ul>');
 	for ( var i = 0; i < subMenu.length; i++) {
-		var li = $("<li><a href='javascript:;'><img src='publicProcess/imgs/" + subMenu[i].img + "' width='260' height='130'/></a></li>");
+		//var li = $("<li><a href='javascript:;'><img src='publicProcess/imgs/" + subMenu[i].img + "' width='260' height='130'/></a></li>");
+        var li = $("<li><a href='javascript:;'>" + subMenu[i].label + "</a></li>");
 		ul.append(li);
 
 		// 添加点击

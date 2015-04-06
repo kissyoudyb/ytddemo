@@ -2,18 +2,18 @@
 var sampleData2 = [{
 	
 	id: 'pmenu',
-	label: '个人业务',
+	label: '文本组件',
 	level: '1',
 	subTree: [{
 		
 		id: 'personalopen',
-		label: '个人开户',
+		label: '组件分类1'     ,
 		img: 'personalopen.png',
 		level: '2',
 		subTree: [{
 		
 			id:'save',
-			label: '储蓄账户',
+			label: '组件分类1-1',
 			img: 'save.png',
 			level: '3',
 			url: '../personalAccount/agentSelect.html',
@@ -26,7 +26,7 @@ var sampleData2 = [{
 		},{
 		
 			id:'private',
-			label: '结算通卡',
+			label: '组件分类1-2',
 			img: 'private.png',
 			level: '3',
 			url: '../settlementCard/settlementCardTips.html',

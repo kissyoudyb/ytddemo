@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head            >
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script type="text/javascript">
+function test(){
+    var temp = document.script.tester.value;
+    var testwin = open("","测试代码","statue=no,resizable=yes,scrollbars=yes,menubar=no,resizable=no,toolbar=no,location=yes,height=768,width=1366,top=20,left=5");
+    testwin.document.open();
+    testwin.document.write(temp);
+    testwin.document.close();
+}
+</script>
+<body>
+<form name="script">
+    <textarea name="tester" rows="30" cols="80" wrap="0ff"></textarea>
+    <input type="button" value="运行代码" onclick="test()" />
+</form>
+</body>
+</html>
