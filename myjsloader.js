@@ -25,7 +25,8 @@
         .script("./js/trapdoor.js")
         .script("./js/alertbox02.js")
         .script("./js/util/common.js")
-        .script("./js/util/ui.js").wait()
+        .script("./js/util/ui.js")
+        .wait()
         .script("./js/jquery.widget.min.js")
 })();
 
